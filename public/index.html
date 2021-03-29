@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <aa-hello-world userName="Alex">
+    <p>Web components are awesome!</p>
+  </aa-hello-world>
+  <script src="build/index.js"></script>
+  <script>
+    const component = document.querySelector('aa-hello-world');
+    component.addEventListener('onClick', () => {
+      console.log('Clicked!')
+    })
+  </script>
+</body>
+
+</html>
